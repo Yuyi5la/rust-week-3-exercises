@@ -334,7 +334,6 @@ impl BitcoinTransaction {
             bytes.extend_from_slice(&input.to_bytes());
         }
 
-        // 4. lock_time (4 bytes LE)
         bytes.extend_from_slice(&self.lock_time.to_le_bytes());
 
         bytes
